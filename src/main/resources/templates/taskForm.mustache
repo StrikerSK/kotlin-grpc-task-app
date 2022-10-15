@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task form</title>
+        <link rel="stylesheet" href="css/base.css"/>
+    </head>
+
+    <body>
+        <div class="app-container">
+            <h1>Task form</h1>
+            <form name="task" action="/task/add" method="post" class="form-container">
+                <label>Task id: <input type="text" name="id"/></label>
+                <label>Task name: <input type="text" name="name"/></label>
+                <label>Task description: <input type="text" name="description"/></label>
+                <input type="submit" value="Send"/>
+            </form>
+        </div>
+    </body>
+</html>
