@@ -1,14 +1,16 @@
 package com.app.service
 
 import com.app.entity.TaskDAO
-import org.springframework.stereotype.Service
+import com.github.javafaker.Faker
 
-@Service
+//@Service
 class TaskConsoleService: ITaskService  {
+
+    private var faker = Faker()
 
     override fun getTask(id: String): TaskDAO {
         println("Requested task: $id")
-        return TaskDAO("Some fetched id", "Some fetched name", "Some fetched description")
+        return TaskDAO(id, faker.job().title(), faker.name().name())
     }
 
     override fun createTask(task: TaskDAO): String {
