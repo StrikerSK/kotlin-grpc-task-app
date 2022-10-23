@@ -6,14 +6,6 @@ plugins {
     id("application")
     kotlin("jvm") version "1.7.20"
     id("org.springframework.boot") version "2.7.4"
-    id("io.spring.dependency-management") version "1.0.11.RELEASE"
-}
-
-group = "io.grpc.task.server"
-version = "1.0"
-
-repositories {
-    mavenCentral()
 }
 
 dependencies {

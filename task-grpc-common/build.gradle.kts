@@ -3,12 +3,9 @@ import com.google.protobuf.gradle.id
 plugins {
     id("application")
     id("java")
+    kotlin("jvm") version "1.7.20"
     id("com.google.protobuf") version "0.9.1"
-    id("io.spring.dependency-management") version "1.0.11.RELEASE"
 }
-
-group = "io.grpc.task.commons"
-version = "1.0"
 
 repositories {
     maven {

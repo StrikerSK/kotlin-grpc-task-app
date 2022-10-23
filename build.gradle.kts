@@ -35,6 +35,21 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
+allprojects {
+    group = "io.grpc.task"
+    version = "1.0.0"
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    apply {
+        plugin("io.spring.dependency-management")
+    }
+}
+
 tasks.test {
     useTestNG()
 }
