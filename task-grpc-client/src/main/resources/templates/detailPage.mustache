@@ -2,17 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Task overview</title>
-        <link rel="stylesheet" href="../css/base.css"/>
+        <title>Task form</title>
+        <link rel="stylesheet" href="./css/base.css"/>
     </head>
 
     <body>
         <div class="app-container">
             <h1>Task overview</h1>
             {{#task}}
-            <p>Task id: {{id}}</p>
-            <p>Task name: {{name}}</p>
-            <p>Task description: {{description}}</p>
+                <p>Task name: {{name}}</p>
+                <p>Task description: {{description}}</p>
             {{/task}}
         </div>
     </body>
