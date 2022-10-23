@@ -2,6 +2,7 @@ package io.grpc.task.server
 
 import io.grpc.Status
 import io.grpc.stub.StreamObserver
+import io.grpc.task.commons.exception.NotFoundException
 import io.grpc.task.proto.Task
 import io.grpc.task.proto.TaskRequest
 import io.grpc.task.proto.TaskServiceGrpc.TaskServiceImplBase
@@ -19,6 +20,10 @@ class TaskGrpcService: TaskServiceImplBase() {
             val task = taskService.readTask(request!!.id)
             responseObserver!!.onNext(task)
             responseObserver.onCompleted()
+        } catch (e: NotFoundException) {
+            responseObserver!!.onError(Status.NOT_FOUND
+                .withDescription(e.message)
+                .asRuntimeException())
         } catch (e: Exception) {
             responseObserver!!.onError(Status.INTERNAL
                 .withDescription("Error while reading task")

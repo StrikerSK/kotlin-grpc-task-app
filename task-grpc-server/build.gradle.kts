@@ -34,7 +34,7 @@ configure<DependencyManagementExtension> {
 }
 
 tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+    useTestNG()
 }
 
 application {
