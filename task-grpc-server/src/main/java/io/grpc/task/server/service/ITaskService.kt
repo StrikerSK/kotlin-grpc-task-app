@@ -1,4 +1,4 @@
-package io.grpc.task.service
+package io.grpc.task.server.service
 
 import io.grpc.task.proto.Task
 

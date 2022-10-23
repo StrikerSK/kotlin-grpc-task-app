@@ -1,4 +1,4 @@
-package io.grpc.task
+package io.grpc.task.server
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

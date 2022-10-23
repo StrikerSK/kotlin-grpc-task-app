@@ -9,7 +9,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
 }
 
-group = "io.grpc.task"
+group = "io.grpc.task.server"
 version = "1.0"
 
 repositories {

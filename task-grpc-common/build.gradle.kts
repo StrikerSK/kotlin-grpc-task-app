@@ -7,7 +7,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
 }
 
-group = "com.app.commons"
+group = "io.grpc.task.commons"
 version = "1.0"
 
 repositories {

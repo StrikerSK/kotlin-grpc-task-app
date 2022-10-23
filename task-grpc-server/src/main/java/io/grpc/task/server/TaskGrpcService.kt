@@ -5,7 +5,7 @@ import io.grpc.stub.StreamObserver
 import io.grpc.task.proto.Task
 import io.grpc.task.proto.TaskRequest
 import io.grpc.task.proto.TaskServiceGrpc.TaskServiceImplBase
-import io.grpc.task.service.ITaskService
+import io.grpc.task.server.service.ITaskService
 import net.devh.boot.grpc.server.service.GrpcService
 import org.springframework.beans.factory.annotation.Autowired
 
